@@ -8,4 +8,4 @@ Use the arrow or WASD keys to move the paddle and keep the ball in the air for a
 
 email: brian.toch23@gmail.com
 <br>
-phone: 215-910-1467
+linkedIn: https://www.linkedin.com/in/brian-tochterman-jr-991a1189/
