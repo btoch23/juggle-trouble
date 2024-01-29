@@ -9,7 +9,17 @@ canvas {
 div {
     display: flex-block;
     text-align: center;
-    padding-bottom: 20;
+}
+
+a {
+    color:#c83e4d !important;
+    text-decoration: none !important;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 #title-container {
