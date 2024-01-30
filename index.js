@@ -115,9 +115,9 @@ function draw() {
             dy = -dy - 0.5;
 
             if (rightPressed && dx < 0) {
-                dx = -dx;
+                dx = -dx + 0.5;
             } else if (leftPressed && dx > 0) {
-                dx = -dx;
+                dx = -dx - 0.5;
             }
 
             if (score % 5 === 0 && paddleWidth > 30 && ballRadius > 5) {
