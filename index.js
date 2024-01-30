@@ -106,12 +106,20 @@ function draw() {
     if (x + dx > canvas.width - ballRadius || x + dx < 0) {
         dx = -dx;
     };
+    
     if (y + dy < ballRadius) {
         dy = -dy;
     } else if (y + dy > canvas.height - paddleHeight) {
         if (x > paddleX && x < paddleX + paddleWidth) {
             score++;
             dy = -dy - 0.5;
+
+            if (rightPressed && dx < 0) {
+                dx = -dx;
+            } else if (leftPressed && dx > 0) {
+                dx = -dx;
+            }
+
             if (score % 5 === 0 && paddleWidth > 30 && ballRadius > 5) {
                 paddleWidth -= 10;
                 ballRadius -= 1;
